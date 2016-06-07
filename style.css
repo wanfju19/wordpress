@@ -1,0 +1,285 @@
+/**
+ * Theme Name:  wfjlearn
+ * Theme URI:   http://wfjlearn.com/
+ * Description: My first learn theme
+ * Version:     1.0.0
+ * Author:      Wang Fujun
+ * Author URI:  http://wangfujun20.com
+ * Tags:        
+ * Text Domain: wfjlearn
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+@font-face {
+    font-family:'Radley'; 
+    font-style:normal;
+    font-weight: normal;
+    src:local('Radley'), url('/f/Radley.woff') format('woff');
+}
+
+@font-face {
+    font-family:'Lovers Quarrel'; 
+    font-style:normal;
+    font-weight: 400;
+    src:local('Lovers Quarrel'), url('/f/quarrel.woff') format('woff');
+}
+
+@font-face {
+    font-family:'Dosis'; 
+    font-style:normal;
+    font-weight: 400;
+    src:local('Dosis Regular'), url('/f/dosis.woff') format('woff');
+}
+
+body {
+    margin-top:0px;
+    font-family:   sans-serif
+}
+
+
+
+#container {
+    margin:0 auto;
+    width: 98%;
+    max-width: 900px;
+
+}
+
+#header {
+    height:auto;
+    width:100%;
+    margin-bottom:9px;
+}
+
+#header #logo {
+    width:100%;
+    line-height:50px;
+    background-color: #23282d;
+    color:yellow;
+    vertical-align: middle;
+    text-align: center;
+    font-size:26px;
+    animation-name: anima1;
+    animation-duration: 8s;   
+    animation-iteration-count: 9999;
+    font-family: 'Satisfy', cursive;
+
+
+}
+
+@keyframes anima1 {
+    0%   {background-color:white;font-size:16px;}
+    25%  {}
+    50%  {background-color:red;}
+    75%  {}
+    100% {}
+}
+
+
+
+
+.menu-mainmenu-container {
+
+    
+}
+
+#menu-mainmenu {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-color:#dd3333;
+    padding:16px;
+    padding-bottom:20px;
+    -webkit-border-radius: 12px 12px 0px 0px; 
+    -moz-border-radius: 12px 12px 0px 0px; 
+    border-radius: 12px 12px 0px 0px; 
+  
+}
+
+#menu-mainmenu li
+{
+     display: inline;
+     margin-left: 0px;
+     margin-right: 0px;
+     padding-left: 10px;
+     padding-right: 0px;
+     min-width: 29px;
+
+   
+}
+
+#menu-mainmenu  li  a
+{
+     display: inline;
+     
+     color:white;
+     margin:0;
+     padding:0;
+     text-decoration: none;
+     
+}
+
+
+.current-menu-item a{
+    background-color: yellowgreen;
+    padding:6px !important;
+    font-weight: bold;
+    border-radius: 6px;
+   
+}
+
+.current-menu-parent a{
+    background-color: yellowgreen;
+    padding:6px !important;
+    font-weight: bold;
+    border-radius: 6px;
+   
+}
+
+
+
+
+#single-content {
+    
+     padding:10px;
+     margin:0 auto;
+}
+
+#single-content h1{
+    text-align: center;
+}
+
+.post-categories {
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+ 
+    
+}
+
+#container-left {
+    margin-top:19px;
+    float:left;
+    width:50%;
+    padding-left:29px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#container-middle {
+    float:left;
+    width:23%;
+    background-color: grey;
+    min-height: 66px;
+}
+
+#container-right {
+    float:left;
+    width:23%;
+    background-color: lightblue;
+    min-height: 66px;
+    
+}
+
+.sidebar h2 {
+     text-align: center;
+     font-size:14px;
+     font-family:  cursive;
+     margin-bottom:0px;
+}
+
+.sidebar.widget-area li a {
+    font-size:12px;
+    line-height: 1.6;
+}
+
+.calendar_wrap {
+    padding-left:3px;
+}
+
+
+a {
+        text-decoration: none;
+}
+
+a:hover {
+      color:red;
+      text-decoration:underline;
+}
+
+.page-numbers {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #dd3333;
+    padding:3px;
+    color:white;
+}
+
+.page-numbers.current {
+    color:yellow;
+}
+
+#single-content {
+    line-height:1.6em;
+    
+}
+
+
+#bread-search {
+    padding-top:6px;
+    padding-bottom:12px;
+    border-bottom:dotted 1px #dd3333;
+    
+}
+
+
+#bread-search  #bread {
+    float:left;
+    margin-left:9px;
+}
+
+#bread-search #search {
+    float:right;
+    margin-right:9px;
+}
+
+
+
+
+
+
+/* small window  */
+@media only screen and (max-width:768px){  
+    
+ #container-left {
+    width:100%;
+}   
+
+
+#container-middle {
+
+    width:100%;
+ 
+}
+
+#container-right {
+    width:100%;
+}
+    
+#bread-search #search {
+    clear:both;
+    float:none;
+    
+    
+}
+
+#bread-search #bread {
+    float:none;
+    clear:both;
+    margin-left:9px;
+}
+
+
+} /*  end of screen 768  */
+
+
