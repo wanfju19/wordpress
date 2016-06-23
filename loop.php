@@ -6,7 +6,18 @@
 if (have_posts()):
     while (have_posts()) : the_post();
         ?>
-        <a href="<?php echo get_permalink(); ?>">     <?php the_title() ?>  </a>  <p>
+       <div class="onerow" stlye="clear:both"> 
+	   <div style="display:inline-block">
+	 <?php
+          if ( has_post_thumbnail() ) {
+	      the_post_thumbnail(array(60,60));
+          }	?>
+	  </div>
+	   <div style="display:inline-block;">
+	   <a href="<?php echo get_permalink(); ?>">   <strong>  <?php the_title() ?> </strong> </a> 
+	   <br>  <?php echo mb_substr(get_the_excerpt(),0,100); ?> 
+	   </div>
+       </div>
             <?php
             endwhile;
     endif;

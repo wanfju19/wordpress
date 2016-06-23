@@ -1,5 +1,3 @@
-
-
             <?php get_header(); ?>
           
        <?php
@@ -10,23 +8,35 @@
         ?>
             <article id="single-content"> 
                 <h1><?php  the_title() ?> </h1>
-                <div>  <?php echo the_category(); ?>  </div>
+                <div id="sub_title">  <?php echo the_category(); ?>  </div>
                 <div>
                     <?php  the_content() ?> 
                 </div>
             </article>
             
-                     
-        <?php              
-             endwhile;
+
+<div> 
+
+    <?php comments_template(); ?>
+
+
+
+                
+        <?php  endwhile; ?>
         
         
         
-        endif;
-        ?>
-        
+     <?php   endif;  ?>
+
+     
+
+
 
         </div>
+
+
+       
+
          <?php wp_footer(); ?>  
     </body>
     

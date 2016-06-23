@@ -1,0 +1,35 @@
+/*
+    special css example
+*/
+
+#arrow span {
+    background-color: #3c3c3c;
+    padding:6px 30px;
+    position: relative;
+    color:white;
+    font-weight: bold;
+    font-size:1.2em;
+    text-shadow: 2px 2px 5px red;
+}
+
+#arrow span:before {
+  content: ' ';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: 8px solid transparent;
+  border-top: 12px solid red;
+}
+
+#circle {
+    border-radius: 75px;
+    width:150px;
+    line-height:150px;
+    background-color: red;
+    margin-top:30px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size:1.2em;
+    text-shadow: 2px 2px 5px white;
+}
